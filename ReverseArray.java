@@ -26,9 +26,13 @@ public class ReverseArray {
 		}
 		System.out.println("}");
 		// ∧ ∧ ∧ ∧ ∧ ∧ ∧ LEAVE THE CODE ABOVE THIS LINE ALONE!!! ∧ ∧ ∧ ∧ ∧ ∧ ∧ 
+		int temp;
 		
-		// YOUR CODE TO REVERSE THE CONTENTS OF THE numbers ARRAY GOES HERE
-		
+		for(int i = 0,j = numbers.length-1; i < j; i++, j--){
+		   temp = numbers[j];
+		   numbers[j] = numbers[i];
+		   numbers[i] = temp;
+	   	} 
 		// ∨ ∨ ∨ ∨ ∨ ∨ ∨ LEAVE THE CODE BELOW THIS LINE ALONE!!! ∨ ∨ ∨ ∨ ∨ ∨ ∨ 
 		System.out.print("After reversal: {");
 		for(int i = 0; i < numbers.length; i++) {
